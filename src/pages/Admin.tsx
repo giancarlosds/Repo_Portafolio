@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import {
   LayoutDashboard,
@@ -175,7 +175,7 @@ export default function Admin() {
   // Sign out
   const handleSignOut = async () => {
     await signOut();
-    navigate('/login');
+    navigate('/mi-login-bonito');
   };
 
   const formatDate = (iso: string) =>
